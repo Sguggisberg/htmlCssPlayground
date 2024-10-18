@@ -47,3 +47,27 @@
     background-color: limegreen;
     box-shadow: 0 0 20px limegreen;
 }
+
+.yellowflashing:after {
+    animation-name: rotblinkend;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotblinkend {
+    0% {
+        background-color: dimgrey;
+    }
+    30% {
+        background-color: dimgrey;
+    }
+    40% {
+        background-color: yellow;
+        box-shadow: 0 0 20px yellow;
+    }
+    100% {
+        background-color: yellow;
+        box-shadow: 0 0 20px yellow;
+    }
+}
