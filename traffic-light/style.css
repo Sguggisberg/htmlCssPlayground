@@ -1,0 +1,49 @@
+.traffic-light {
+    display: inline-block;
+    width: 30px;
+    height: 90px;
+    border-radius: 6px;
+    position: relative;
+    background-color: black;
+    zoom: 1.7;
+}
+
+.traffic-light span,
+.traffic-light:before,
+.traffic-light:after {
+    content: "";
+    color: white;
+    position: absolute;
+    border-radius: 15px;
+    width: 22px;
+    height: 22px;
+    left: 4px;
+}
+.traffic-light:before {
+    top: 6px;
+    background-color: dimgrey;
+}
+
+.traffic-light:after {
+    top: 34px;
+    background-color: dimgrey;
+}
+.traffic-light span {
+    top: 62px;
+    background-color: dimgrey;
+}
+
+.red:before {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+
+.yellow:after {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+}
+
+.green span {
+    background-color: limegreen;
+    box-shadow: 0 0 20px limegreen;
+}
